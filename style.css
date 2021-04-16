@@ -1,0 +1,163 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header{
+    background-color: #be6c0e;
+    color: #ffffff;
+    height: 90px;
+    
+}
+
+.header-logo{
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+    
+}
+
+.header-nav li{
+    float: right;
+    padding: 35px 20px;
+   
+}
+
+main{
+    padding: 50px 20px;
+
+}
+
+.main-containeer h1{
+    font-size: 95px;
+    margin-top: 50px;
+}
+
+
+
+.main-containeer span{
+    color: #f30b0b;
+}
+.main-containeer h2{
+    position: relative;
+    color: rgb(53, 16, 83);
+    font-size: 30px;
+    animation: gerak 2s infinite;
+}
+
+@keyframes gerak {
+    from{top : 0px;}
+    to{top : 10px;}
+}
+
+.contents{
+    height: 500px;
+    margin-top: 100px;
+
+   
+}
+    
+.section-title{
+    padding-top: 30px;
+    border-bottom : 10px solid #cecece;
+    color: #d40909;
+    font-size: 35px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.contents-item {
+    float: left;
+    margin-right: 40px;
+}
+
+.contents-image {
+    width: 200x;
+    height: 200px;
+    padding: 10px;
+    background-color: #d40909;
+    align-items: center;
+}
+
+.contents-image.white{
+    background-color: #ffffff;
+}
+
+.contents-image.orange{
+    background-color: rgb(88, 233, 107);
+}
+
+
+.contents-image img{
+    width: 250px;
+    align-items: center;
+}
+
+.contents-item p{
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact{
+    padding-top: 100px ;
+}
+
+input, textarea{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #cecece;
+}
+
+.contact-submit{
+    background-color: #059605;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.txt-red{
+    color: red;
+    position: relative;
+    font-size: 15px;
+    
+}
+
+footer{
+    background: #18085e;
+    color: #ffffff;
+    padding: 20px 40px;
+    height: 30px;
+}
+
+.footer-logo{
+    float: left;
+    font-size: 30px;
+}
+
+.footer-nav{
+    float: right;
+    
+}
+
+.footer-nav li{
+    padding: 10px 20px;
+    float: left;
+}

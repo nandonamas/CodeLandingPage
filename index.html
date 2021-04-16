@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemograman Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            OTOMOTIFKU
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li>Beranda</li>
+                <li>Tentang Kami</li>
+                <li>Price List</li>
+                <li>Testimonial</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="main-containeer">
+            <h1><center>TOYOTA<span>ANDALAN<span>KU</span></center></h1>
+            <h2><center>TOYOTA SELALU SETIA MENEMANI ANDA</center></h2>
+        </div>
+        <div class="contents">
+            <h3 class="section-title">TIPE-TIPE MOBIL</h3>
+
+            <div class="contents-item">
+                <div class="contents-image white">
+                    <img src="agya.jpg" alt="NEW TOYOTA AGYA">
+                </div>
+                <p>AGYA</p>
+            </div>
+
+            <div class="contents-item">
+                <div class="contents-image orange">
+                    <img src="alphard.jpg" alt="NEW TOYOTA ALPHARD">
+                </div>
+                <p>ALPHARD</p>
+            </div>
+
+            <div class="contents-item">
+                <div class="contents-image white">
+                    <img src="Chr.png" alt="NEW TOYOTA CHR">  
+                </div>
+                <p>PHP</p>
+            </div>
+
+            <div class="contents-item">
+                <div class="contents-image white">
+                    <img src="fortuner.jpg" alt="NEW TOYOTA FORTUNER">
+                    
+                </div>
+                <p>FORTUNER</p>
+            </div>
+        </div>
+        <div class="contents-item">
+            <div class="contents-image white">
+                <img src="rush.jpg" alt="NEW TOYOTA RUSH">
+                
+                </div>
+                <p>RUSH</p>
+            </div>
+        </div>
+        <div class="contents-item">
+            <div class="contents-image white">
+                <img src="innova.jpg" alt="NEW TOYOTA INNOVA">
+            
+                    </div>
+                    <p>INNOVA</p>
+                </div>
+            </div>
+        <div class="contents-item">
+            <div class="contents-image white">
+                <img src="Sienta.jpg" alt="NEW TOYOTA SIENTA">
+                    
+                    </div>
+                    <p>SIENTA</p>
+                </div>
+            </div>
+            <div class="contents-item">
+                <div class="contents-image white">
+                    <img src="yaris.jpg" alt="NEW TOYOTA YARIS">
+                    
+                </div>
+                <p>YARIS</p>
+            </div>
+        </div>
+
+
+    
+
+        <div class="contact">
+            <h3 class="section-title">Untuk Info Selanjutnya Silahkan Hubungi Kami </h3>
+            <form onsubmit="keepmassage()">
+                <p>Nama (wajib diisi) *</p>
+                <input type="text" name="" id="nama" placeholder="Masukkan Nama Anda">
+                <p>NomorTelepon (wajib diisi) *</p>
+                <input type="number" name="" id="telepon" placeholder="Masukkan Nomor Telepon Anda">
+                <p>Pesan (wajib diisi) *</p>
+                <input type="text" name="" id="pesan" placeholder="Masukkan Pesan Anda">
+                <p class="txt-red">* Kolom wajib diisi</p>
+                <button type="submit" class="contact-submit"> Kirim </button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class = "footer-logo">OTOMOTIFKU</div>
+        <div class = "footer-nav">
+            <ul>
+                <li>Tentang</li>
+                <li>Hubungi Kami</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        let simpan=[];
+        const keepmassage = () =>{
+            let nama = document.getElementById("nama").value;
+            let telepon = document.getElementById("telepon").value;
+            let pesan = document.getElementById("pesan").value;
+
+            let user = {nama: nama,telepon:telepon,pesan: pesan};
+            let sendPesan = localStorage.getItem("pesan");
+
+            if(sendPesan != null){
+                simpan = JSON.parse(sendPesan);
+            }
+            simpan.push(user);
+            localStorage.setItem("pesan", JSON.stringify(simpan));
+        }
+    </script>
+
+
+
+</body>
+</html>
